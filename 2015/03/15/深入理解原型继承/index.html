@@ -79,6 +79,16 @@ JavaScrip秘密花园在JavaScrip中,一切变量皆对象,除了">
 
   
 
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44253052-3', 'auto');
+        ga('send', 'pageview');
+  </script>
+
 
 
     <title> 深入理解javascript原型继承 · 红土大陆 </title>
@@ -473,8 +483,11 @@ Animal --&gt;Object.prototype
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/03/15/深入理解原型继承/"
-           data-title="深入理解javascript原型继承" data-url="https://norfish.github.com/2015/03/15/深入理解原型继承/">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
       </div>
     
   </div>
@@ -553,21 +566,22 @@ Animal --&gt;Object.prototype
     
   
   
-
   <script type="text/javascript">
-    var duoshuoQuery = {short_name:"yox"};
+    var disqus_config = function () {
+        this.page.url = 'https://norfish.github.com/2015/03/15/深入理解原型继承/';
+        this.page.identifier = '2015/03/15/深入理解原型继承/';
+        this.page.title = '深入理解javascript原型继承';
+    };
     (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
+    var d = document, s = d.createElement('script');
+
+    s.src = '//ziro_o.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();  
   </script>
 
-  
 
 
 
